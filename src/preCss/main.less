@@ -30,9 +30,144 @@
     background-color: rgba(255, 255, 255, 0.82);
     margin-right: 10px;
     padding: 5px;
+    max-width: 60%;
     .lg-block({ font-size: 30px; });
     .md-block({ font-size: 25px; });
     .sm-block({ font-size: 20px; });
     .xs-block({ font-size: 15px; });
+  }
+}
+
+.about {
+  .row-flex();
+  flex-direction: column;
+  align-items: center;
+
+  &_name {
+    .col();
+  }
+
+  &_specialization {
+    .col();
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #bebdbd;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+
+  &_introduction {
+    .col();
+    .size(8);
+    padding: 10px 0;
+  }
+
+  &_info {
+    .col();
+    .size(8);
+  }
+}
+
+.titleH2 {
+  border-bottom: 1px solid black;
+  color: #333;
+  display: inline-block;
+  font-size: 32px;
+  margin: 20px 0;
+  padding-bottom: 5px;
+  text-transform: capitalize;
+  text-align: center;
+  // text-decoration: underline;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &_title {
+    align-self: center;
+  }
+}
+
+.skills {
+  .row-flex();
+  flex-direction: column;
+  align-items: center;
+  .languages{
+    .col();
+    .size(8);
+    .languagesList {
+      .row-flex();
+      // text-align: center;
+      // justify-content: center;
+
+      .language {
+        .col();
+        .size(4);
+        .size-xs(6);
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &_level {
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .resumeCols {
+    .row-flex();
+    // flex-direction: column;
+    // align-items: center;
+    justify-content: space-around;
+
+    .resumeLeft {
+      .col();
+      .size(4);
+    }
+
+    .resumeRight {
+      .col();
+      .size(4);
+    }
+  }
+}
+
+.resumItem {
+  .resumItemBorder {
+    border-left: 2px solid #1d685f;
+    padding-left: 5px;
+  }
+
+  &_title {
+    padding: 10px 0;
+    font-weight: 700;
+  }
+
+  &_subtitle {
+    color: #1d685f;
+    font-weight: 500;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  &_period {
+    background: #effbf9;
+    color: #34b7a7;
+    display: inline-block;
+    font-weight: 500;
+    font-style: italic;
+    padding: 5px;
+  }
+
+  &_description {
+    font-style: italic;
   }
 }
