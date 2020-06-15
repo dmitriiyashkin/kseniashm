@@ -1,10 +1,38 @@
-.welcomeSlide{
-  .backgroundImage{
-    background-image: url(../../src/images/welcomeSlide.jpg);
-    background-position: 0 0;
+// .lg-block({});
+// .md-block({});
+// .sm-block({});
+// .xs-block({});
+
+.welcomeSlide {
+  .backgroundImage {
+    background-image: url("./../../src/images/welcomeSlide.jpg");
+    // background-position: 0 0;
+    // background-repeat: no-repeat;
+    // background-size: 100% auto;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center top;
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    height: 100vh;
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .lg-block({ min-height: 480px; });
+    .md-block({ min-height: 350px; });
+    .sm-block({ min-height: 280px; });
+    .xs-block({ min-height: 235px; });
+  }
+
+  .welcomeText {
+    font-family: Raleway;
+    font-size: 45px;
+    font-weight: 300;
+    background-color: rgba(255, 255, 255, 0.82);
+    margin-right: 10px;
+    padding: 5px;
+    .lg-block({ font-size: 30px; });
+    .md-block({ font-size: 25px; });
+    .sm-block({ font-size: 20px; });
+    .xs-block({ font-size: 15px; });
   }
 }
