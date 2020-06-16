@@ -9,7 +9,7 @@ const gulpif = require('gulp-if');
 const gcmq = require('gulp-group-css-media-queries');
 const less = require('gulp-less');
 
-const isDev = true;
+const isDev = false;
 const isProd = !isDev;
 
 function styles(){

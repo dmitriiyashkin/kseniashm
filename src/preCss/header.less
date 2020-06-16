@@ -1,0 +1,44 @@
+.headerItems{
+  .row-flex();
+  background: @colorMidGreen;
+  padding: 15px 0px;
+  justify-content: center;
+
+  .navigation{
+    .col();
+    .size(12);
+    ul{
+      .row-flex();
+
+      li{
+        .col();
+        .size(3);
+        text-align: center;
+        // .lg-block({});
+        // .md-block({});
+        // .sm-block({});
+        // .xs-block({});
+
+        a{
+          color: @colorWhite;
+          text-decoration: none;
+          text-transform: uppercase;
+          &:hover{
+            border-bottom: 1ps solid @colorWhite;
+          }
+        }
+      }
+    }
+  }
+  // .socialNet{
+  //   .col();
+  //   .size(3);
+  //   ul{
+  //     .row-flex();
+  //     li{
+  //       .col();
+  //       .size(3);
+  //     }
+  //   }
+  // }
+}
