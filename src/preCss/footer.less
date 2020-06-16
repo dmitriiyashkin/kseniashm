@@ -1,0 +1,35 @@
+footer{
+  background: @colorMidGreen;
+  padding: 20px;
+  .map{
+    .row-flex();
+    justify-content: center;
+    padding-top: 10px;
+    iframe{
+      .col();
+      .size(10);
+      height: 200px;
+    }
+  }
+  .contacts{
+    display: flex;
+    justify-content: space-around;
+    .address{
+      padding-top: 15px;
+    }
+    .socialNet{
+      padding-top: 15px;
+      .row-flex();
+      a{
+        text-decoration: none;
+        color: @colorGrey;
+        .col();
+      }
+    }
+  }
+
+  .location{
+    padding-top: 20px;
+  }
+
+}
